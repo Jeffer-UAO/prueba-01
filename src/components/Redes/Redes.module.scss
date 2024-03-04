@@ -1,0 +1,15 @@
+.space {
+
+  position: sticky;
+  top: 0;
+  width: 100%;
+  z-index: 5;
+}
+
+
+
+@media screen and (min-width: 601px) {
+  .space {
+    max-width: 0; /* Ajusta el tamaño máximo para pantallas más grandes de 600px */
+  }
+}

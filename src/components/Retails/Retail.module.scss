@@ -1,0 +1,60 @@
+.content {
+  background-color: rgb(240, 240, 240);
+  padding: 0.5rem;
+  width: 100%;
+
+  h2 {
+    text-transform: uppercase;
+    margin: 0.5rem;
+  }
+
+  h5 {
+    font-size: 0.7rem;
+    text-transform: uppercase;
+  }
+  .list {
+    display: grid;
+    gap: 0.5rem;
+    grid-template-columns: repeat(auto-fit, minmax(7rem, 1fr));
+
+    &__product {
+      position: relative;
+      border-radius: 5px;
+      background-color: white;
+
+      img {
+        border-top-right-radius: 5px;
+        border-top-left-radius: 5px;
+        object-fit: cover;
+        object-position: center center;
+        aspect-ratio: 1/1;
+      }
+
+      .title {
+        text-transform: uppercase;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        text-align: center;
+
+        h6 {
+          font-size: 1.2rem;
+          font-weight: 800;
+          color: #fd384f;
+        }
+      }
+    }
+  }
+
+  .listExclusive {
+    display: grid;
+    gap: 10px;
+    grid-template-columns: repeat(auto-fit, minmax(8rem, 1fr));
+
+    &__product {
+      position: relative;
+
+      border-radius: 5px;
+      background-color: white;
+    }
+  }
+}
